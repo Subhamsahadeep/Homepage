@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Homepage</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+
+  <body id="img" onload = "startTimer()">
+    <div id="clock"></div>
+
+
+ <div class="wrap">
+        <div class="items">
+                                <div id="div_top_hypers">
+                            <ul id="ul_top_hypers">
+                                <li> <a href="#"  onclick="googleclick()" class="a_top_hypers"> <b>Google</b></a></li>
+                                <script type="text/javascript">
+                                            function googleclick()
+                                            {
+                                              document.getElementById('id').src = "images/google.png";
+                                              document.getElementById('myform').action = "https://www.google.com/search";
+                                              document.getElementById('forminput').name = "q";
+                                            }
+                                          </script>
+
+                                <li> <a href="#"  onclick="youtubeclick()" class="a_top_hypers"> <b>Youtube</b></a></li>
+                                <script type="text/javascript">
+                                            function youtubeclick()
+                                            {
+                                              document.getElementById('id').src = "images/youtube.png";
+                                              document.getElementById('myform').action = "https://www.youtube.com/results";
+                                              document.getElementById('forminput').name = "search_query";
+                                            }
+                                          </script>
+
+                                <li> <a href="#"   onclick="yahooclick()" class="a_top_hypers"> <b>Yahoo</b></a></li>
+                                <script type="text/javascript">
+                                            function yahooclick()
+                                            {
+                                              document.getElementById('id').src = "images/yahoo.png";
+                                              document.getElementById('myform').action = "https://in.search.yahoo.com/search";
+                                              document.getElementById('forminput').name = "p";
+                                            }
+                                          </script>
+
+                                <li> <a href="#"   onclick="bingclick()" class="a_top_hypers"> <b>Bing</b></a></li>
+                                <script type="text/javascript">
+                                            function bingclick()
+                                            {
+                                              document.getElementById('id').src = "images/bing.png";
+                                              document.getElementById('myform').action = "https://www.bing.com/search";
+                                              document.getElementById('forminput').name = "q";
+                                            }
+                                          </script>
+
+                                <li> <a href="#"  onclick="askclick()" class="a_top_hypers"> <b>Ask</b></a></li>
+                                      <script type="text/javascript">
+                                            function askclick()
+                                            {
+                                              document.getElementById('id').src = "images/ask.png";
+                                              document.getElementById('myform').action = "https://www.ask.com/web";
+                                              document.getElementById('forminput').name = "q";
+                                            }
+                                          </script>
+                            </ul>
+                        </div>
+                </div>
+     <div class="search">
+        
+         <div id="searchtab"></div>
+         <form id="myform" action="https://www.google.com/search" post="GET">
+            <div class="fake-input">
+                <input type="text" name="q" id="forminput" class="searchterm" placeholder="what are you looking for ? ">
+               <img src="images/google.png" id="id" width="50px" height="50px">
+            </div>
+
+            
+         <button type="submit" class="searchbtn">
+             <i class="fa fa-search"></i>
+         </button>
+        </form>
+         
+     </div>
+ </div>
+
+<div id="icons">
+<div id="amazon">
+    <img src="images/amazon.jpg" class="imageamazon" width="70px" height="70px" onclick="amazon()">
+    <script type="text/javascript">
+        function amazon(){
+             window.location = "http://www.amazon.com";
+        }
+    </script>
+    
+</div>
+
+<div id="ebay">
+    <img src="images/ebay.png" class="imageebay" width="70px" height="70px" onclick="ebay()">
+    <script type="text/javascript">
+        function ebay(){
+             window.location = "http://www.ebay.in";
+        }
+    </script>
+    </div>
+
+
+<div id="flipcart">
+    <img src="images/flipcart.jpg" class="imageflip" width="70px" height="70px" onclick="flip()">
+    <script type="text/javascript">
+        function flip(){
+             window.location = "http://www.flipcart.com";
+        }
+    </script>
+</div>
+
+    <div id="snapdeal">
+    <img src="images/snapdeal.jpg" class="imagesnap" width="70px" height="70px" onclick="snap()">
+    <script type="text/javascript">
+        function snap(){
+             window.location = "http://www.snapdeal.com";
+        }
+    </script>
+    </div>
+
+
+    <div id="myntra">
+    <img src="images/myntra.jpg" class="imagemyntra" width="70px" height="70px" onclick="myntra()">
+    <script type="text/javascript">
+        function myntra(){
+             window.location = "http://www.myntra.com";
+        }
+    </script>
+    
+</div>
+</div>
+
+
+<script >
+    var images=new Array('images/background.jpg','images/background1.jpg','images/background2.jpg','images/background3.jpg','images/background4.jpg','images/background5.jpg');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('body')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,3000);
+    });
+}
+
+
+</script>
+<script type="text/javascript">
+    setInterval(displaytime, 500);
+
+    function displaytime() {
+    var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+      seconds = currentTime.getSeconds();
+    if (minutes < 10) {
+     minutes = "0" + minutes;
+  }
+
+    var suffix = "AM";
+    if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+    }
+    if (hours == 0) {
+     hours = 12;
+    }
+    if(hours<10)
+    {
+        hours = "0"+hours;
+    }
+    if(minutes<10)
+    {
+        minutes = minutes;
+    }
+    if(seconds<10)
+    {
+        seconds = "0"+seconds;
+    }
+
+    document.getElementById('clock').innerHTML = (hours + ":" + minutes + ":" + seconds);
+}
+</script>
+  </body>
+</html>

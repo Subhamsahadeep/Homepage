@@ -1,0 +1,223 @@
+body{
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	font-family: arial;
+}
+
+.wrap{
+	position: relative;
+	margin-top: 7%;
+	width: 70%;
+	height: 30px;
+	top:20%;
+	left:70%;
+	transform: translate(-50%,-50%);
+	background-attachment: fixed;
+	
+}
+#clock{
+	width: 40%;
+	height: 50px;
+	font-family: serif;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 50px;
+	position: relative;
+	left: 30%;
+
+}
+#clock {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px 	#303030;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px 	#303030;}
+}
+
+/*.fake-input { position: relative; width:500px; }*/
+/*.fake-input input { border:none: background:#fff; display:block; width: 100%; box-sizing: border-box }*/
+.fake-input img { position: absolute; top: 2px; left: -50px }
+
+.search{
+	width: 50%;
+	position: relative;
+}
+.searchterm{
+	float: left;
+	width: 100%;
+	border: 3px solid #00B4CC;
+	padding: 11px;
+	font-size: 17px;
+	outline: none;
+	transition: 1s all;
+
+}
+.searchterm:focus{
+	color:#00B4CC;
+	border: 3px solid #fff;
+}
+.searchbtn{
+	position: absolute;
+	width: 50px;
+	height: 53px;
+	border: 1px solid #00B4CC;
+	background-color: #00B4CC;
+	text-align: center;
+	color : #fff;
+	cursor: pointer;
+	font-size:20px; 
+
+}
+
+
+.items{
+	padding-right: 2px;
+	
+}
+#div_top_hypers #ul_top_hypers li a:hover{
+	background-color : 	rgba(255, 99, 71, 0.5);
+	border: 1px solid black;
+	border-radius: 4px;
+	color: #000000;
+}
+
+
+
+#div_top_hypers li{
+    color:  #1F4CB8;
+    text-shadow:5px 5px 10px white;
+    display:inline;   
+    font-family: serif; 
+    font-size: 120%;  
+    text-align: center;
+    padding-right: 15px;
+    min-width: 200px;
+    min-height: 5px;
+}
+#div_top_hypers #ul_top_hypers li a:active{
+	background-color : 	#ADFF2F;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: #000000;
+}
+#div_top_hypers #ul_top_hypers li a:visited{
+	background-color : rgb(230, 232, 71, 0.5);
+	border: 1px solid black;
+	border-radius: 4px;
+	color: #000000;
+}
+
+#ul_top_hypers {
+ 	 font-family: serif; 
+    display: inline;
+}
+
+#amazon .imageamazon {
+	position: relative;
+	margin-top: 20px;
+	opacity: 0.9;
+	 border: 2px solid black; 
+  border-radius: 50%;
+
+}
+
+#amazon:hover .imageamazon {
+  opacity: 1;
+ 
+   box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+			-moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+
+#ebay .imageebay {
+	position: relative;
+	margin-top: -95px;
+	left: 80px;
+	opacity: 0.9;
+	 border: 2px solid black; 
+  border-radius: 50%;
+
+}
+
+#ebay:hover .imageebay {
+  opacity: 1;
+ 
+   box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+			-moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+
+#flipcart .imageflip {
+	position: relative;
+	margin-top: -140px;
+	left: 160px;
+	opacity: 0.9;
+	 border: 2px solid black; 
+  border-radius: 50%;
+
+}
+
+#flipcart:hover .imageflip {
+  opacity: 1;
+ 
+   box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+			-moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+
+#snapdeal .imagesnap {
+	position: relative;
+	margin-top: -180px;
+	left: 240px;
+	opacity: 0.9;
+	 border: 2px solid black; 
+  border-radius: 50%;
+
+}
+
+#snapdeal:hover .imagesnap {
+  opacity: 1;
+ 
+   box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+			-moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+
+#myntra .imagemyntra {
+	position: relative;
+	margin-top: -220px;
+	left: 320px;
+	opacity: 0.9;
+	 border: 2px solid black; 
+  border-radius: 50%;
+
+}
+
+#myntra:hover .imagemyntra {
+  opacity: 1;
+ 
+   box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+			-moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+
+#icons{
+position: relative;
+margin-top: 35px;
+width: 26%;
+left: 39%;
+
+}
